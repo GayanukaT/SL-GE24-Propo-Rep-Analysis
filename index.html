@@ -5,51 +5,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Seat Distribution under Proportional Representation (Sri Lanka General Election 2024)</title>
   <link rel="stylesheet" href="style.css">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 <body>
     <header>
-        <h1>Seat Distribution under Proportional Representation (Sri Lanka General Election 2024)</h1>
+        <h1>Seat Distribution under Proportional Representation</h1>
+        <h1>(Sri Lanka General Election 2024)</h1>
     </header>
     <main>
         <section id="district-buttons">
-          <h2>Select a District</h2>
-          <button onclick="showGraphs('All Island')">All Island</button>
-          <button onclick="showGraphs('Colombo')">Colombo</button>
-          <button onclick="showGraphs('Gampaha')">Gampaha</button>
-          <button onclick="showGraphs('Kalutara')">Kalutara</button>
-          <button onclick="showGraphs('Mahanuwara')">Mahanuwara</button>
-          <button onclick="showGraphs('Matale')">Matale</button>
-          <button onclick="showGraphs('Nuwaraeliya')">Nuwaraeliya</button>
-          <button onclick="showGraphs('Galle')">Galle</button>
-          <button onclick="showGraphs('Matara')">Matara</button>
-          <button onclick="showGraphs('Hambantota')">Hambantota</button>
-          <button onclick="showGraphs('Jaffna')">Jaffna</button>
-          <button onclick="showGraphs('Vanni')">Vanni</button>
-          <button onclick="showGraphs('Batticaloa')">Batticaloa</button>
-          <button onclick="showGraphs('Digamadulla')">Digamadulla</button>
-          <button onclick="showGraphs('Trincomalee')">Trincomalee</button>
-          <button onclick="showGraphs('Kurunegala')">Kurunegala</button>
-          <button onclick="showGraphs('Puttalam')">Puttalam</button>
-          <button onclick="showGraphs('Anuradhapura')">Anuradhapura</button>
-          <button onclick="showGraphs('Polonnaruwa')">Polonnaruwa</button>
-          <button onclick="showGraphs('Badulla')">Badulla</button>
-          <button onclick="showGraphs('Monaragala')">Monaragala</button>
-          <button onclick="showGraphs('Ratnapura')">Ratnapura</button>
-          <button onclick="showGraphs('National List')">National List</button>
+          <div class="button-container">
+            <button onclick="showGraphs('All Island')">All Island</button>
+            <button onclick="showGraphs('Colombo')">Colombo</button>
+            <button onclick="showGraphs('Gampaha')">Gampaha</button>
+            <button onclick="showGraphs('Kalutara')">Kalutara</button>
+            <button onclick="showGraphs('Mahanuwara')">Mahanuwara</button>
+            <button onclick="showGraphs('Matale')">Matale</button>
+            <button onclick="showGraphs('Nuwaraeliya')">Nuwaraeliya</button>
+            <button onclick="showGraphs('Galle')">Galle</button>
+            <button onclick="showGraphs('Matara')">Matara</button>
+            <button onclick="showGraphs('Hambantota')">Hambantota</button>
+            <button onclick="showGraphs('Jaffna')">Jaffna</button>
+            <button onclick="showGraphs('Vanni')">Vanni</button>
+            <button onclick="showGraphs('Batticaloa')">Batticaloa</button>
+            <button onclick="showGraphs('Digamadulla')">Digamadulla</button>
+            <button onclick="showGraphs('Trincomalee')">Trincomalee</button>
+            <button onclick="showGraphs('Kurunegala')">Kurunegala</button>
+            <button onclick="showGraphs('Puttalam')">Puttalam</button>
+            <button onclick="showGraphs('Anuradhapura')">Anuradhapura</button>
+            <button onclick="showGraphs('Polonnaruwa')">Polonnaruwa</button>
+            <button onclick="showGraphs('Badulla')">Badulla</button>
+            <button onclick="showGraphs('Monaragala')">Monaragala</button>
+            <button onclick="showGraphs('Ratnapura')">Ratnapura</button>
+            <button onclick="showGraphs('National List')">National List</button>
+          </div>
         </section>
     
         <section id="charts-container">
-          <h2>Charts</h2>
-          <div id="charts">
-            <canvas id="votesChart"></canvas>
-            <canvas id="seatsChart"></canvas>
-          </div>
-        </section>
+            <div id="chartDiv"></div>
+          </section>
       </main>
     
       <footer>
-        <p>Created for educational purposes | SL-GE24 Analysis</p>
+        <p>(This tool was created for educational and analysis purposes only. Data may contain errors or inaccuracies.)</p>
       </footer>
     
       <script src="app.js"></script>

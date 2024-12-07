@@ -1,54 +1,61 @@
-/* General Reset */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: #FFFFFF;
+    color: #333333;
 }
   
 header {
     text-align: center;
     padding: 20px;
-    background-color: #004d40;
-    color: #fff;
+    color: #333333;
 }
   
 header h1 {
     margin: 0;
-    font-size: 24px;
+    font-size: 28px;
+    font-weight: bold;
 }
   
 header p {
     margin: 5px 0 0;
-    font-size: 16px;
+    font-size: 18px;
 }
-  
+ 
 #district-buttons {
     text-align: center;
     padding: 20px;
 }
- 
+  
+#district-buttons .button-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+  
 #district-buttons button {
-    background-color: #00796b;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin: 5px;
-    border-radius: 5px;
+    background-color: transparent;
+    color: #333333;
+    border: 2px solid #333333;
+    padding: 12px 20px;
+    margin: 0;
+    border-radius: 8px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 16px;
+    transition: all 0.2s ease;
 }
   
 #district-buttons button:hover {
-    background-color: #004d40;
+    border-color: #555555;
 }
   
 #charts-container {
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 1000px;
+    margin: 40px auto;
 }
   
 #charts {
@@ -61,17 +68,16 @@ header p {
 canvas {
     max-width: 350px;
     max-height: 350px;
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: #FFFFFF;
+    border: 2px solid #333333;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
   
 footer {
     text-align: center;
-    padding: 10px;
-    background-color: #004d40;
-    color: #fff;
+    padding: 15px;
+    color: #333333;
     position: relative;
     bottom: 0;
     width: 100%;
@@ -79,5 +85,5 @@ footer {
   
 footer p {
     margin: 0;
-    font-size: 12px;
+    font-size: 15px;
 }
