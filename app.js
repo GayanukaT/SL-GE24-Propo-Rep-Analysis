@@ -343,6 +343,10 @@ const districtData = {
     } 
   };
   
+  document.addEventListener("DOMContentLoaded", () => {
+    showGraphs("All Island");
+});
+
   function showGraphs(district) {
     console.log(`District clicked: ${district}`);
     const data = districtData[district];
